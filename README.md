@@ -32,3 +32,32 @@ When running the progam, the following behavior should be observed:
 
 ![image](https://github.com/user-attachments/assets/e5fe437d-7473-4d15-89bc-3eadbeb5d3db)
 
+## Implementation of the Dining Philosophers in P
+
+This implementation is done using the P-language, and has two different versions: 
+  1. All philosophers take the left fork first, then the second. Once they have both they can eat.
+  2. All philosophers act the same way as (1) except for on philosopher that takes the forks in reverse order.
+
+**How to run?** 
+
+1. To look at the available tests use `p check`, this will give two possible tests: TestCaseNoSwap, TestCaseWithSwap
+2. To run the first test use `p check -tc TestCaseNoSwap`, to test the second use `p check -tc TestCaseWithSwap`
+
+**Expected output of the program**
+
+1. **TestCaseNoSwAP**: When running this test, the P program will find 1 bug ( a deadlock ):
+
+![image](https://github.com/user-attachments/assets/448256df-9c06-4740-8af9-20e7e0d45057) 
+
+The peasy visualizer shows the following bug output, that's raised because of a Dead Lock. 
+
+![image](https://github.com/user-attachments/assets/c36f8321-2536-4370-b333-801ecc383036)
+
+2. **TestCaseSwap**: When running the second test where one philosopher takes forks in reversed orders, the program doesn't detect any bugs, which mean the simulation runs deadlock-free:
+
+![image](https://github.com/user-attachments/assets/d4713591-4b9b-4e6c-ad3b-5cb86a440033)
+
+
+
+
+
