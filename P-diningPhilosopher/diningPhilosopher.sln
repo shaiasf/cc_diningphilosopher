@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PGenerated", "PGenerated", "{443B5CD4-4684-FDFD-DD84-66B4F7C94000}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "generatedOutput", "PGenerated\CSharp\generatedOutput.csproj", "{4BDBB986-B5C6-2E34-A535-BA025D610EDD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4BDBB986-B5C6-2E34-A535-BA025D610EDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BDBB986-B5C6-2E34-A535-BA025D610EDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BDBB986-B5C6-2E34-A535-BA025D610EDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BDBB986-B5C6-2E34-A535-BA025D610EDD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4BDBB986-B5C6-2E34-A535-BA025D610EDD} = {443B5CD4-4684-FDFD-DD84-66B4F7C94000}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B4D766FD-6C57-4E47-A6EE-2DB8E8EFECAC}
+	EndGlobalSection
+EndGlobal

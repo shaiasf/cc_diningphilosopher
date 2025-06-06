@@ -1,0 +1,658 @@
+{
+    "version": "1.4.0",
+    "project": {
+        "name": "akka-quickstart-test",
+        "directory": "/home/chaimae/Downloads/akka-quickstart-scala/akka-quickstart",
+        "workspaceDir": "/home/chaimae/Downloads/akka-quickstart-scala/akka-quickstart",
+        "sources": [
+            "/home/chaimae/Downloads/akka-quickstart-scala/akka-quickstart/src/test/scala",
+            "/home/chaimae/Downloads/akka-quickstart-scala/akka-quickstart/src/test/scala-2.13",
+            "/home/chaimae/Downloads/akka-quickstart-scala/akka-quickstart/src/test/scala-2",
+            "/home/chaimae/Downloads/akka-quickstart-scala/akka-quickstart/src/test/java",
+            "/home/chaimae/Downloads/akka-quickstart-scala/akka-quickstart/target/scala-2.13/src_managed/test"
+        ],
+        "dependencies": [
+            "akka-quickstart"
+        ],
+        "classpath": [
+            "/home/chaimae/Downloads/akka-quickstart-scala/akka-quickstart/.bloop/akka-quickstart/scala-2.13/classes",
+            "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.15/scala-library-2.13.15.jar",
+            "/home/chaimae/.cache/coursier/v1/https/repo.akka.io/maven/com/typesafe/akka/akka-actor-typed_2.13/2.10.6/akka-actor-typed_2.13-2.10.6.jar",
+            "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.5.8/logback-classic-1.5.8.jar",
+            "/home/chaimae/.cache/coursier/v1/https/repo.akka.io/maven/com/typesafe/akka/akka-actor-testkit-typed_2.13/2.10.6/akka-actor-testkit-typed_2.13-2.10.6.jar",
+            "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest_2.13/3.2.15/scalatest_2.13-3.2.15.jar",
+            "/home/chaimae/.cache/coursier/v1/https/repo.akka.io/maven/com/typesafe/akka/akka-actor_2.13/2.10.6/akka-actor_2.13-2.10.6.jar",
+            "/home/chaimae/.cache/coursier/v1/https/repo.akka.io/maven/com/typesafe/akka/akka-slf4j_2.13/2.10.6/akka-slf4j_2.13-2.10.6.jar",
+            "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-api/2.0.17/slf4j-api-2.0.17.jar",
+            "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/qos/logback/logback-core/1.5.8/logback-core-1.5.8.jar",
+            "/home/chaimae/.cache/coursier/v1/https/repo.akka.io/maven/com/typesafe/akka/akka-testkit_2.13/2.10.6/akka-testkit_2.13-2.10.6.jar",
+            "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.15/scalatest-core_2.13-3.2.15.jar",
+            "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-featurespec_2.13/3.2.15/scalatest-featurespec_2.13-3.2.15.jar",
+            "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-flatspec_2.13/3.2.15/scalatest-flatspec_2.13-3.2.15.jar",
+            "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-freespec_2.13/3.2.15/scalatest-freespec_2.13-3.2.15.jar",
+            "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-funsuite_2.13/3.2.15/scalatest-funsuite_2.13-3.2.15.jar",
+            "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-funspec_2.13/3.2.15/scalatest-funspec_2.13-3.2.15.jar",
+            "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-propspec_2.13/3.2.15/scalatest-propspec_2.13-3.2.15.jar",
+            "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-refspec_2.13/3.2.15/scalatest-refspec_2.13-3.2.15.jar",
+            "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-wordspec_2.13/3.2.15/scalatest-wordspec_2.13-3.2.15.jar",
+            "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-diagrams_2.13/3.2.15/scalatest-diagrams_2.13-3.2.15.jar",
+            "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-matchers-core_2.13/3.2.15/scalatest-matchers-core_2.13-3.2.15.jar",
+            "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-shouldmatchers_2.13/3.2.15/scalatest-shouldmatchers_2.13-3.2.15.jar",
+            "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-mustmatchers_2.13/3.2.15/scalatest-mustmatchers_2.13-3.2.15.jar",
+            "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.15/scala-reflect-2.13.15.jar",
+            "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/config/1.4.3/config-1.4.3.jar",
+            "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-compatible/3.2.15/scalatest-compatible-3.2.15.jar",
+            "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.13/3.2.15/scalactic_2.13-3.2.15.jar",
+            "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.13/2.1.0/scala-xml_2.13-2.1.0.jar"
+        ],
+        "out": "/home/chaimae/Downloads/akka-quickstart-scala/akka-quickstart/.bloop/akka-quickstart",
+        "classesDir": "/home/chaimae/Downloads/akka-quickstart-scala/akka-quickstart/.bloop/akka-quickstart/scala-2.13/test-classes",
+        "resources": [
+            "/home/chaimae/Downloads/akka-quickstart-scala/akka-quickstart/src/test/resources",
+            "/home/chaimae/Downloads/akka-quickstart-scala/akka-quickstart/target/scala-2.13/resource_managed/test"
+        ],
+        "scala": {
+            "organization": "org.scala-lang",
+            "name": "scala-compiler",
+            "version": "2.13.15",
+            "options": [
+                
+            ],
+            "jars": [
+                "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.15/scala-library-2.13.15.jar",
+                "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.15/scala-compiler-2.13.15.jar",
+                "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.15/scala-reflect-2.13.15.jar",
+                "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/io/github/java-diff-utils/java-diff-utils/4.12/java-diff-utils-4.12.jar",
+                "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jline/jline/3.26.3/jline-3.26.3.jar",
+                "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.14.0/jna-5.14.0.jar"
+            ],
+            "setup": {
+                "order": "mixed",
+                "addLibraryToBootClasspath": false,
+                "addCompilerToClasspath": false,
+                "addExtraJarsToClasspath": false,
+                "manageBootClasspath": false,
+                "filterLibraryFromClasspath": false
+            },
+            "bridgeJars": [
+                "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala2-sbt-bridge/2.13.15/scala2-sbt-bridge-2.13.15.jar"
+            ]
+        },
+        "java": {
+            "options": [
+                
+            ]
+        },
+        "test": {
+            "frameworks": [
+                {
+                    "names": [
+                        "org.scalacheck.ScalaCheckFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs2.runner.Specs2Framework",
+                        "org.specs2.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.scalatest.tools.Framework",
+                        "org.scalatest.tools.ScalaTestFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "com.novocode.junit.JUnitFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "munit.Framework"
+                    ]
+                },
+                {
+                    "names": [
+                        "zio.test.sbt.ZTestFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "weaver.framework.CatsEffect"
+                    ]
+                },
+                {
+                    "names": [
+                        "hedgehog.sbt.Framework"
+                    ]
+                }
+            ],
+            "options": {
+                "excludes": [
+                    
+                ],
+                "arguments": [
+                    
+                ]
+            }
+        },
+        "platform": {
+            "name": "jvm",
+            "config": {
+                "home": "/home/chaimae/.cache/coursier/arc/https/github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.15%252B6/OpenJDK17U-jdk_x64_linux_hotspot_17.0.15_6.tar.gz/jdk-17.0.15+6",
+                "options": [
+                    "-Duser.dir=/home/chaimae/Downloads/akka-quickstart-scala/akka-quickstart"
+                ]
+            },
+            "mainClass": [
+                
+            ]
+        },
+        "resolution": {
+            "modules": [
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-library",
+                    "version": "2.13.15",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-library",
+                            "path": "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.15/scala-library-2.13.15.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "sources",
+                            "path": "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.15/scala-library-2.13.15-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.akka",
+                    "name": "akka-actor-typed_2.13",
+                    "version": "2.10.6",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "akka-actor-typed_2.13",
+                            "path": "/home/chaimae/.cache/coursier/v1/https/repo.akka.io/maven/com/typesafe/akka/akka-actor-typed_2.13/2.10.6/akka-actor-typed_2.13-2.10.6.jar"
+                        },
+                        {
+                            "name": "akka-actor-typed_2.13",
+                            "classifier": "sources",
+                            "path": "/home/chaimae/.cache/coursier/v1/https/repo.akka.io/maven/com/typesafe/akka/akka-actor-typed_2.13/2.10.6/akka-actor-typed_2.13-2.10.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "ch.qos.logback",
+                    "name": "logback-classic",
+                    "version": "1.5.8",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "logback-classic",
+                            "path": "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.5.8/logback-classic-1.5.8.jar"
+                        },
+                        {
+                            "name": "logback-classic",
+                            "classifier": "sources",
+                            "path": "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.5.8/logback-classic-1.5.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.akka",
+                    "name": "akka-actor_2.13",
+                    "version": "2.10.6",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "akka-actor_2.13",
+                            "path": "/home/chaimae/.cache/coursier/v1/https/repo.akka.io/maven/com/typesafe/akka/akka-actor_2.13/2.10.6/akka-actor_2.13-2.10.6.jar"
+                        },
+                        {
+                            "name": "akka-actor_2.13",
+                            "classifier": "sources",
+                            "path": "/home/chaimae/.cache/coursier/v1/https/repo.akka.io/maven/com/typesafe/akka/akka-actor_2.13/2.10.6/akka-actor_2.13-2.10.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.akka",
+                    "name": "akka-slf4j_2.13",
+                    "version": "2.10.6",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "akka-slf4j_2.13",
+                            "path": "/home/chaimae/.cache/coursier/v1/https/repo.akka.io/maven/com/typesafe/akka/akka-slf4j_2.13/2.10.6/akka-slf4j_2.13-2.10.6.jar"
+                        },
+                        {
+                            "name": "akka-slf4j_2.13",
+                            "classifier": "sources",
+                            "path": "/home/chaimae/.cache/coursier/v1/https/repo.akka.io/maven/com/typesafe/akka/akka-slf4j_2.13/2.10.6/akka-slf4j_2.13-2.10.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.slf4j",
+                    "name": "slf4j-api",
+                    "version": "2.0.17",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "slf4j-api",
+                            "path": "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-api/2.0.17/slf4j-api-2.0.17.jar"
+                        },
+                        {
+                            "name": "slf4j-api",
+                            "classifier": "sources",
+                            "path": "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-api/2.0.17/slf4j-api-2.0.17-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "ch.qos.logback",
+                    "name": "logback-core",
+                    "version": "1.5.8",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "logback-core",
+                            "path": "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/qos/logback/logback-core/1.5.8/logback-core-1.5.8.jar"
+                        },
+                        {
+                            "name": "logback-core",
+                            "classifier": "sources",
+                            "path": "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/qos/logback/logback-core/1.5.8/logback-core-1.5.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe",
+                    "name": "config",
+                    "version": "1.4.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "config",
+                            "path": "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/config/1.4.3/config-1.4.3.jar"
+                        },
+                        {
+                            "name": "config",
+                            "classifier": "sources",
+                            "path": "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/config/1.4.3/config-1.4.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-library",
+                    "version": "2.13.15",
+                    "configurations": "optional",
+                    "artifacts": [
+                        {
+                            "name": "scala-library",
+                            "path": "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.15/scala-library-2.13.15.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "sources",
+                            "path": "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.15/scala-library-2.13.15-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-reflect",
+                    "version": "2.13.15",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-reflect",
+                            "path": "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.15/scala-reflect-2.13.15.jar"
+                        },
+                        {
+                            "name": "scala-reflect",
+                            "classifier": "sources",
+                            "path": "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.15/scala-reflect-2.13.15-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.akka",
+                    "name": "akka-actor-testkit-typed_2.13",
+                    "version": "2.10.6",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "akka-actor-testkit-typed_2.13",
+                            "path": "/home/chaimae/.cache/coursier/v1/https/repo.akka.io/maven/com/typesafe/akka/akka-actor-testkit-typed_2.13/2.10.6/akka-actor-testkit-typed_2.13-2.10.6.jar"
+                        },
+                        {
+                            "name": "akka-actor-testkit-typed_2.13",
+                            "classifier": "sources",
+                            "path": "/home/chaimae/.cache/coursier/v1/https/repo.akka.io/maven/com/typesafe/akka/akka-actor-testkit-typed_2.13/2.10.6/akka-actor-testkit-typed_2.13-2.10.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest_2.13",
+                    "version": "3.2.15",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest_2.13",
+                            "path": "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest_2.13/3.2.15/scalatest_2.13-3.2.15.jar"
+                        },
+                        {
+                            "name": "scalatest_2.13",
+                            "classifier": "sources",
+                            "path": "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest_2.13/3.2.15/scalatest_2.13-3.2.15-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.akka",
+                    "name": "akka-testkit_2.13",
+                    "version": "2.10.6",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "akka-testkit_2.13",
+                            "path": "/home/chaimae/.cache/coursier/v1/https/repo.akka.io/maven/com/typesafe/akka/akka-testkit_2.13/2.10.6/akka-testkit_2.13-2.10.6.jar"
+                        },
+                        {
+                            "name": "akka-testkit_2.13",
+                            "classifier": "sources",
+                            "path": "/home/chaimae/.cache/coursier/v1/https/repo.akka.io/maven/com/typesafe/akka/akka-testkit_2.13/2.10.6/akka-testkit_2.13-2.10.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-core_2.13",
+                    "version": "3.2.15",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-core_2.13",
+                            "path": "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.15/scalatest-core_2.13-3.2.15.jar"
+                        },
+                        {
+                            "name": "scalatest-core_2.13",
+                            "classifier": "sources",
+                            "path": "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.15/scalatest-core_2.13-3.2.15-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-featurespec_2.13",
+                    "version": "3.2.15",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-featurespec_2.13",
+                            "path": "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-featurespec_2.13/3.2.15/scalatest-featurespec_2.13-3.2.15.jar"
+                        },
+                        {
+                            "name": "scalatest-featurespec_2.13",
+                            "classifier": "sources",
+                            "path": "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-featurespec_2.13/3.2.15/scalatest-featurespec_2.13-3.2.15-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-flatspec_2.13",
+                    "version": "3.2.15",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-flatspec_2.13",
+                            "path": "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-flatspec_2.13/3.2.15/scalatest-flatspec_2.13-3.2.15.jar"
+                        },
+                        {
+                            "name": "scalatest-flatspec_2.13",
+                            "classifier": "sources",
+                            "path": "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-flatspec_2.13/3.2.15/scalatest-flatspec_2.13-3.2.15-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-freespec_2.13",
+                    "version": "3.2.15",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-freespec_2.13",
+                            "path": "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-freespec_2.13/3.2.15/scalatest-freespec_2.13-3.2.15.jar"
+                        },
+                        {
+                            "name": "scalatest-freespec_2.13",
+                            "classifier": "sources",
+                            "path": "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-freespec_2.13/3.2.15/scalatest-freespec_2.13-3.2.15-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-funsuite_2.13",
+                    "version": "3.2.15",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-funsuite_2.13",
+                            "path": "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-funsuite_2.13/3.2.15/scalatest-funsuite_2.13-3.2.15.jar"
+                        },
+                        {
+                            "name": "scalatest-funsuite_2.13",
+                            "classifier": "sources",
+                            "path": "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-funsuite_2.13/3.2.15/scalatest-funsuite_2.13-3.2.15-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-funspec_2.13",
+                    "version": "3.2.15",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-funspec_2.13",
+                            "path": "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-funspec_2.13/3.2.15/scalatest-funspec_2.13-3.2.15.jar"
+                        },
+                        {
+                            "name": "scalatest-funspec_2.13",
+                            "classifier": "sources",
+                            "path": "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-funspec_2.13/3.2.15/scalatest-funspec_2.13-3.2.15-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-propspec_2.13",
+                    "version": "3.2.15",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-propspec_2.13",
+                            "path": "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-propspec_2.13/3.2.15/scalatest-propspec_2.13-3.2.15.jar"
+                        },
+                        {
+                            "name": "scalatest-propspec_2.13",
+                            "classifier": "sources",
+                            "path": "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-propspec_2.13/3.2.15/scalatest-propspec_2.13-3.2.15-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-refspec_2.13",
+                    "version": "3.2.15",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-refspec_2.13",
+                            "path": "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-refspec_2.13/3.2.15/scalatest-refspec_2.13-3.2.15.jar"
+                        },
+                        {
+                            "name": "scalatest-refspec_2.13",
+                            "classifier": "sources",
+                            "path": "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-refspec_2.13/3.2.15/scalatest-refspec_2.13-3.2.15-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-wordspec_2.13",
+                    "version": "3.2.15",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-wordspec_2.13",
+                            "path": "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-wordspec_2.13/3.2.15/scalatest-wordspec_2.13-3.2.15.jar"
+                        },
+                        {
+                            "name": "scalatest-wordspec_2.13",
+                            "classifier": "sources",
+                            "path": "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-wordspec_2.13/3.2.15/scalatest-wordspec_2.13-3.2.15-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-diagrams_2.13",
+                    "version": "3.2.15",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-diagrams_2.13",
+                            "path": "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-diagrams_2.13/3.2.15/scalatest-diagrams_2.13-3.2.15.jar"
+                        },
+                        {
+                            "name": "scalatest-diagrams_2.13",
+                            "classifier": "sources",
+                            "path": "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-diagrams_2.13/3.2.15/scalatest-diagrams_2.13-3.2.15-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-matchers-core_2.13",
+                    "version": "3.2.15",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-matchers-core_2.13",
+                            "path": "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-matchers-core_2.13/3.2.15/scalatest-matchers-core_2.13-3.2.15.jar"
+                        },
+                        {
+                            "name": "scalatest-matchers-core_2.13",
+                            "classifier": "sources",
+                            "path": "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-matchers-core_2.13/3.2.15/scalatest-matchers-core_2.13-3.2.15-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-shouldmatchers_2.13",
+                    "version": "3.2.15",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-shouldmatchers_2.13",
+                            "path": "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-shouldmatchers_2.13/3.2.15/scalatest-shouldmatchers_2.13-3.2.15.jar"
+                        },
+                        {
+                            "name": "scalatest-shouldmatchers_2.13",
+                            "classifier": "sources",
+                            "path": "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-shouldmatchers_2.13/3.2.15/scalatest-shouldmatchers_2.13-3.2.15-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-mustmatchers_2.13",
+                    "version": "3.2.15",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-mustmatchers_2.13",
+                            "path": "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-mustmatchers_2.13/3.2.15/scalatest-mustmatchers_2.13-3.2.15.jar"
+                        },
+                        {
+                            "name": "scalatest-mustmatchers_2.13",
+                            "classifier": "sources",
+                            "path": "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-mustmatchers_2.13/3.2.15/scalatest-mustmatchers_2.13-3.2.15-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-compatible",
+                    "version": "3.2.15",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-compatible",
+                            "path": "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-compatible/3.2.15/scalatest-compatible-3.2.15.jar"
+                        },
+                        {
+                            "name": "scalatest-compatible",
+                            "classifier": "sources",
+                            "path": "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-compatible/3.2.15/scalatest-compatible-3.2.15-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalactic",
+                    "name": "scalactic_2.13",
+                    "version": "3.2.15",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalactic_2.13",
+                            "path": "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.13/3.2.15/scalactic_2.13-3.2.15.jar"
+                        },
+                        {
+                            "name": "scalactic_2.13",
+                            "classifier": "sources",
+                            "path": "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.13/3.2.15/scalactic_2.13-3.2.15-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang.modules",
+                    "name": "scala-xml_2.13",
+                    "version": "2.1.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-xml_2.13",
+                            "path": "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.13/2.1.0/scala-xml_2.13-2.1.0.jar"
+                        },
+                        {
+                            "name": "scala-xml_2.13",
+                            "classifier": "sources",
+                            "path": "/home/chaimae/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.13/2.1.0/scala-xml_2.13-2.1.0-sources.jar"
+                        }
+                    ]
+                }
+            ]
+        },
+        "tags": [
+            "test"
+        ]
+    }
+}

@@ -1,0 +1,69 @@
+Total event coverage: 100.0%
+============================
+StateMachine: Fork
+==================
+Event coverage: 100.0%
+
+	State: Init
+		State event coverage: 100.0%
+		Events received: ePickUp, ePutDown
+		Events sent: eBusy, eTaken
+
+Monitor: ForkUsageSpec
+======================
+Event coverage: 100.0%
+
+	State: Monitoring
+		State event coverage: 100.0%
+		Events received: ForkGranted, ForkReleased
+		Previous states: Monitoring
+		Next states: Monitoring
+
+StateMachine: Philosopher
+=========================
+Event coverage: 100.0%
+
+	State: Init
+		State event coverage: 100.0%
+		Events received: eStart
+		Next states: Hungry
+
+	State: ReadyToEat
+		State has no expected events, so coverage is 100%
+		Previous states: Thinking
+		Next states: Hungry
+
+	State: Thinking
+		State event coverage: 100.0%
+		Events received: eDelay
+		Events sent: eDelay
+		Previous states: Hungry
+		Next states: ReadyToEat
+
+	State: Hungry
+		State event coverage: 100.0%
+		Events received: eBusy, eTaken
+		Events sent: ePickUp, ePutDown
+		Previous states: Init, ReadyToEat
+		Next states: Eating, Thinking
+
+	State: FinishEating
+		State has no expected events, so coverage is 100%
+		Events sent: ePutDown
+		Previous states: Eating
+
+	State: Eating
+		State event coverage: 100.0%
+		Events received: eDelay
+		Events sent: eDelay
+		Previous states: Hungry
+		Next states: FinishEating
+
+StateMachine: TestWithSwap
+==========================
+Event coverage: 100.0%
+
+	State: Init
+		State has no expected events, so coverage is 100%
+		Events sent: eStart
+
